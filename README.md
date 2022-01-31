@@ -37,6 +37,7 @@ In order to setup the app you need following
 
   ```
   EDITOR="mate --wait" bin/rails credentials:edit
+  ```
 
 4. Run Migrations
   ```
@@ -55,9 +56,9 @@ In order to setup the app you need following
 2. After changing the directory to the cloned repo install gems & bundle
 
   ```
-    cd rails_react_material_demo
-    bundle
-    yarn
+  cd rails_react_material_demo
+  bundle
+  yarn
   ```
 3. Setup master key
    if you have master key value & credentials.yml.enc then use that.
@@ -70,17 +71,17 @@ In order to setup the app you need following
 4. Setup db & Run Migrations
 
   ```
-    RAILS_ENV=production rake db:setup
+  RAILS_ENV=production rake db:setup
   ```
 
 5. Run webpack to build react app
   ```
-    RAILS_ENV=production RACK_ENV=production NODE_ENV=production bin/webpack
+  RAILS_ENV=production RACK_ENV=production NODE_ENV=production bin/webpack
   ```
 
 6. Run application
   ```
-    RAILS_SERVE_STATIC_FILES=true rails server -e production -p 4001
+  RAILS_SERVE_STATIC_FILES=true rails server -e production -p 4001
   ```
 
 
@@ -93,6 +94,6 @@ In order to setup the app you need following
 
 ### Todos
 
-[] Add unit tests
-[] Add env var setup
-[] Create gemset
+- [] Add unit tests
+- [] Add env var setup
+- [] Create gemset
